@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Scrollspy - Home, About and Gallery</title>
+	
+	
+	<!-- Link to Bootstrap Stylesheet-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+	<!-- link to leaflet css-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+
+	<!-- Link to My Stylesheet-->
+	<link rel="stylesheet" href="bootstrap_exercises.css">
+
+	<!-- link to font awesome cdn-->
+	<script src="https://kit.fontawesome.com/26e620a2af.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-main">
+  
+	<!-- Navigation -->
+	<nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+		<div class="container-fluid">
+			<a id="homeName" class="navbar-brand" href="#home"><img src="./images/tud logo.png"  alt="Logo" width="100" height="56"></a>
+			
+			
+
+
+
+			<!--NavBar toogle-->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+
+
+
+			<ul class="nav nav-pills">  
+				<li class="nav-item">
+					<a class="nav-link" href="#About">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Skills">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Skills">Work Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Education">Education</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Skills">Hobbies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Contact">Contact</a>
+				</li>
+			
+			</ul>
+		</div> <!-- End of class container fluid-->
+
+	</div>
+	<!--searchBox-->
+	 
+	   <form class="d-flex" role="search">
+		 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		 <button class="btn btn-outline-success" type="submit"></button>
+	   </form>
+
+
+
+	 </div>
+
+	</nav>
+  
+	<!-- Content for each page is below-->
+	<div data-spy="scroll" data-target="#navbar-main" data-offset="0">
+		<main>
+			
+			<!-- Home page -->
+            <section id="home" class="topics">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-center">
+                    <!-- Basic Carousel with Controls -->
+                    <div id="trainersCarousel" class="carousel slide carousel-fade w-50" style="border: 1px solid" data-bs-ride="carousel">
+                   
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-bs-target="#trainersCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#trainersCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#trainersCarousel" data-bs-slide-to="2"></li>
+                      </ol>
+         
+                      <!-- Images -->
+                      <div class="carousel-inner">
+                     
+                        <div class="carousel-item active" data-bs-interval="2000">
+                          <img src="images/hero1.jpg" class="d-block w-100" alt="Bernese">
+                          <!-- Captions-->
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Darragh Regan</h5>
+                            <p>Computer science and IT management</p>
+                          </div>
+                        </div>
+                     
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="images/hero2.jpg" class="d-block w-100" alt="Collie">
+                          <!-- Captions-->
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Darragh Regan</h5>
+                            <p>Computer science and IT management</p>
+                          </div>
+                        </div>
+                     
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="images/hero 3.jpg" class="d-block w-100" alt="Golden">
+                          <!-- Captions-->
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Darragh Regan</h5>
+                            <p>Computer science and IT management</p>
+                          </div>
+                        </div>
+         
+                      </div>
+         
+                      <!-- Controls -->
+                      <a class="carousel-control-prev" href="#trainersCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </a>
+         
+                      <a class="carousel-control-next" href="#trainersCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </a>
+                    </div> <!-- Close div for carousel-->
+                  </div><!-- Close div for col-->
+                </div> <!-- Close div for row-->
+           
+                <div class="row">
+                    <div class="col d-flex justify-content-center pt-2">
+                        <h2 class="text-success">Darragh Regan</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h4 class="text-info">TUD graduate</h4>
+                    </div>
+                </div>
+            </section>
+				
+			
+			
+		
+			<!-- About -->
+			<section id="About" class="topics">
+				<h4>About</h4>
+					 
+				<div class="row">
+					<div class="col-4">
+						<img class="float-start img-fluid rounded me-2" src="images/DSCF2552.JPG" width="600" height="400" alt="Gym family"/>
+					</div>
+		  
+					<div class="col-8" id="about">
+						<div class="row">
+							<p>My name is Darragh Regan. I am 24 years old and am currently in my final year in my honours degree of Computer Science and IT management. I have studied this course in TUD in the Tallaght campus from 2017 to 2023.
+							</p>
+							<p>Over the last few years I have developed a great passion in my field of Computer Science. I have developed great communcation and leadership skills from my past experiences in both college and work I also love working in a team, so I could intereact with others whenever to achieve a high grade or even to make friends!
+							</p>
+							<table class="table table-hover">
+								<thead>
+								  <tr>
+									<th>Key information</th>
+									<th></th>
+									<th></th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>Age:</td>
+									<td>24</td>
+									<td>05/11/1998</td>
+								  </tr>
+								  <tr>
+									<td>Third level:</td>
+									<td>TUD</td>
+									<td>(hons) Computer Science and IT Management</td>
+								  </tr>
+								  <tr>
+									<td>Status:</td>
+									<td>Living in Dublin</td>
+									<td>Student</td>
+								  </tr>
+								</tbody>
+							  </table>
+						</div>
+				  	</div> <!-- close of col-->
+				</div> <!-- close of row-->
+			</section>
+			<br><br><br><br><br><br><br>
+
+
+			<!--  Technical skills page -->
+			<section id=" Technical Skills" class="topics">
+				<h4>Skills</h4>
+
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">skills bar</div>
+				  </div>
+
+				  <div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Database: SQL</div>
+				  </div>
+
+				  <div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Networking</div>
+				  </div>
+				  
+				  <div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Database NoSQL</div>
+				  </div>
+
+				  <div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Cloud Infrastructure</div>
+				  </div>
+
+				  <div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Cloud services</div>
+				  </div>
+
+				  <div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">DevOps</div>
+				  </div>  
+				
+				  <div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Security</div>
+				  </div> 
+
+				  <div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Web Design</div>
+				  </div> 
+                      
+				  <div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Software Coding Languages</div>
+				  </div> 
+  
+
+					
+				
+			
+            <!-- Work Experience -->
+            <section id="Work Experience" class="topics">
+				<h4>Work Experience</h4>
+
+
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						  TUD Online Internship
+						</button>
+					  </h2>
+					  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+						  <strong>01/02/2021 - 01/08/2021 </strong> During the pandemic I did my internship through my university TUD, I did phython datacamp courses, AWS cloud foundation, CCNA networking and events such as hackaton and AWS JAM. <code></code>
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						  SuperValu Deansgrange
+						</button>
+					  </h2>
+					  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+						  <strong>01/04/2022 - 01/09/2022</strong> I worked as a sales assistant in the Fruit and Veg department. Communication skills and dealing with customers were important. <code></code>
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						  Dunnes Stores Cornelscourt
+						</button>
+					  </h2>
+					  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+						  <strong>01/11/2018 - 01/06/2019</strong> I worked as a sales assistant in the Fruit and Veg department. My communication skills dealing with customers were greatly improved during my time with Dunnes Stores <code></code>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+
+
+
+			<!--Education-->
+			<section id="Education" class="topics">
+				<h4>Education</h4>
+
+				<table class="table">
+				<thead>
+				  <tr>
+					<th scope="col">Degrees and certicates</th>
+					<th scope="col">Year</th>
+					<th scope="col">Location</th>
+					
+					
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row">BSc (Honours) Computing with IT Management (expected june 2023)</th>
+					<td>2023</td>
+					<td>TUD Tallaght Campus</td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th scope="row">BSc Computing with IT Management</th>
+					<td>2022</td>
+					<td>TUD Tallaght Campus</td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th scope="row">Leaving Cert</th>
+					<td>2017</td>
+					<td>Clonkeen College</td>
+					<td></td>
+				  </tr>
+
+				  <tr>
+					<th scope="row">Certificate of Participation in TU Dublin President's Sustainability Challenge</th>
+					<td>2022</td>
+					<td>TUD Tallaght Campus</td>
+					<td></td>
+				  </tr>
+
+
+				  <tr>
+					<th scope="row">Palo Alto Networks Cybersecurity Academy Student Certificate of Completion</th>
+					<td>2022</td>
+					<td>TUD Tallaght Campus</td>
+					<td>r</td>
+				  </tr>
+
+				  <tr>
+					<th scope="row">Various Datacamp certiicates</th>
+					<td>2021</td>
+					<td>TUD Tallaght Campus</td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th scope="row">ECDL</th>
+					<td>2015</td>
+					<td>Clonkeen College</td>
+					<td></td>
+				  </tr>
+
+				</tbody>
+			  </table>
+
+			  <div class="accordion" id="accordionExample">
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  4th Year Project
+					</button>
+				  </h2>
+				  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					  <strong>Evalauting Firewalls</strong> For my 4th year project the goal was to evalaute five different firewall types. the types of firewalls included Web Application Firewall, Network Firewall, Database Firewall, Cloud Based Firewall and a Next Generation Firewall  <code></code>
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  2nd Year Project
+					</button>
+				  </h2>
+				  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					  <strong> My second year project was a website reviewing different alcoholic beverages. </strong> MQTT was incorporated to accept new products into a database. My job was to be the leader, set up meeting times, write reports for the two other members and work on the database.   <code></code> 
+					</div>
+				  </div>
+				
+				  </div>
+				</div>
+			  </div>
+
+
+
+<!--  Hobbiese -->
+<section id=" Hobbies" class="topics">
+	<h4>Hobbies</h4>
+
+
+	<div class="card-group">
+		<div class="card">
+		  <img class="card-img-top" src="images/IMG_0319.PNG" alt="Card image cap">
+		  <div class="card-body">
+			<h5 class="card-title">Sports</h5>
+			<p class="card-text">Sports is a massive part of what I love in life. From competing with my school in cross country in east-leinsters to causually playing football with my friends. Even with a hectic lifestyle I always try my best to be involved in sporting activities, whenever to test myself, have fun with friends or raise money for charity. </p>
+			<p class="card-text"><small class="text-muted"></small></p>
+		  </div>
+		</div>
+		<div class="card">
+		  <img class="card-img-top" src="images/tech.jpeg" alt="Card image cap">
+		  <div class="card-body">
+			<h5 class="card-title">Technology</h5>
+			<p class="card-text">I am interested in many different areas of technology. Where it be the latest phones or TV's. I also have a huge interest in technological art such as movies or video games. </p>
+			<p class="card-text"><small class="text-muted"></small></p>
+		  </div>
+		</div>
+		<div class="card">
+		  <img class="card-img-top" src="images/friendly-business-team-talking-at-coworking-space-Y8LU63Z.jpg" alt="Card image cap">
+		  <div class="card-body">
+			<h5 class="card-title">Socialising</h5>
+			<p class="card-text">Socialising and interacting with friends, collegues or even interacting with new people is very important to me. Socialising over the years has allowed me to further develop my communication skills and is a great way for me to have a postive lifestyle. </p>
+			<p class="card-text"><small class="text-muted"></small></p>
+		  </div>
+		</div>
+	  </div>
+
+
+
+			<!-- Contact  -->
+			<section id="contact" class="topics">
+				<h4>Contact</h4>
+				<p></p><br>
+
+            </div>
+		    </div>
+			<div class="container mb-5">
+				<div class="row">
+            <div class="col-xl-5 col-xxl-6 mb-5">
+				<div id="map"></div>
+			</div>
+			<div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
+				<div class="mb-5">
+					<i class="fa-solid fa-house-user"></i>
+					<h6 class="text-uppercase mb-2">Address</h6>
+					<p class="lead mb-0">19 Hainault Drive Foxrock Dublin 18</p>
+
+			</div>
+
+			<div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
+				<div class="mb-5">
+					<i class="fa-solid fa-phone"></i>
+					<h6 class="text-uppercase mb-2">Phone</h6>
+					<p class="lead mb-0">0874454485</p>
+			</div>
+
+			<div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
+				<div class="mb-5">
+					<i class="fa-solid fa-envelope"></i>
+					<h6 class="text-uppercase mb-2">Email</h6>
+					<p class="lead mb-0">darraghregan72@gmail.com</p>
+					
+			</div>
+			
+
+				  
+				<html>
+					<head>
+					<meta name="viewport" content="width=device-width, initial-scale=1">
+					<style>
+					body {font-family: Arial, Helvetica, sans-serif;}
+					* {box-sizing: border-box;}
+					
+					input[type=text], select, textarea {
+					  width: 100%;
+					  padding: 12px;
+					  border: 1px solid rgb(23, 118, 212);
+					  border-radius: 4px;
+					  box-sizing: border-box;
+					  margin-top: 6px;
+					  margin-bottom: 16px;
+					  resize: vertical;
+					}
+					
+					input[type=submit] {
+					  background-color: #04AA6D;
+					  color: rgb(255, 255, 255);
+					  padding: 12px 20px;
+					  border: none;
+					  border-radius: 4px;
+					  cursor: pointer;
+					}
+					
+					input[type=submit]:hover {
+					  background-color: #45a049;
+					}
+					
+					.container {
+					  border-radius: 5px;
+					  background-color: #f2f2f2;
+					  padding: 20px;
+					}
+					
+					
+
+
+					</style>
+					</head>
+					<body>
+					
+
+					<h3>Contact me</h3>
+				
+				 
+
+
+					
+					 
+					<div class="container">
+        			  <form action="/action_page.php">
+						<label for="fname">Full Name</label>
+						<input type="text" id="fname" name="Your Name" placeholder="Please enter your full name">
+					
+						
+					 <div class="form-group">
+					  <label for="Your Email;">Email</label>
+                      <input type="email" name="Your Email" class="form-control" placeholder="Please enter your email address">
+					  
+				    
+					
+						</select>
+					
+						<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Write your message here" style="height:200px"></textarea>
+					
+						<button type="submit" class="btn btn-primary" disabled="disabled">submit</button>
+
+
+
+
+
+
+						
+					  </form>
+					</div>
+					
+					</body>
+					</html>
+					
+    
+		</main>
+
+	</div> <!-- End of div data-spy="scroll" -->
+
+	<footer>
+		<div class="footer sticky-bottom">
+        <b>Designed by Darragh Regan</b>
+    </footer>
+
+    <!--leaflet js-->
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+
+	<!--bootstrap JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+	<!-- My JavaScript file -->
+	<script src="scripts/myScripts.js"></script>  
+</body>
+</html>
